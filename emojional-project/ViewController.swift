@@ -28,7 +28,17 @@ class ViewController: UIViewController {
     }
 
         let emojis = ["🧪": "Toxic chemical.", "🧫": "This petri dish contains lice."]
-
+    
+//    let customMessages = [
+//        "Toxic chemical." : ["Radioactive.", "Flimsy flask.", "Green goo."], "This petri dish contains lice." : ["This petri dish contains roach milk.", "]]
+//    
+//    let emojiMessage = customMessages[emojis["Toxic chemical."!]!]?[0]// here I want to extract the word that goes with my emoji
+//    // then find that word in the dictionary
+//    // get it's value (array)
+//    // and access the first element
+    
     }
+
+
 
 
