@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showMessage(sender: UIButton) {
-        let alertController = UIAlertController(title: "Warning:", message: "This petri dish contains lice.", preferredStyle: UIAlertController.Style.alert)
+        let selectedEmotion = sender.titleLabel?.text
+        
+        let alertController = UIAlertController(title: "Warning:", message: emojis[selectedEmotion!], preferredStyle: UIAlertController.Style.alert)
         // in as much detail as possible
         // pseudo-code the things that need to happen
         // when a user clicks an emoji button
@@ -25,7 +27,8 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 
+        let emojis = ["🧪": "Toxic chemical.", "🧫": "This petri dish contains lice."]
 
+    }
 
-}
 
